@@ -1,6 +1,7 @@
 ## The code below is Marcos Lopez de Prado's implementation of the
 ## sequential bootstrap, taken verbatim from his book *Advances in
-## Financial Machine Learning* (Wiley 2018).
+## Financial Machine Learning* (Wiley 2018), with some minor changes
+## for execution on Python 3.8
 
 import pandas as pd
 import numpy as np
@@ -66,3 +67,5 @@ def auxMC(numObs,numBars,maxH):
     phi=seqBootstrap(indM)
     seqU=getAvgUniqueness(indM[phi]).mean()
     return {'stdU':stdU,'seqU':seqU}
+
+
