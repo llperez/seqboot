@@ -1,2 +1,2 @@
 # seqboot
-Performant sequential bootstrap
+Optimized version of López de Prado's sequential bootstrap resampling method.
